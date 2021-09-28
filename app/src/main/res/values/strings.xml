@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BlockedContactsDemo</string>
+
+    <string name="element_text">Text</string>
+</resources>
