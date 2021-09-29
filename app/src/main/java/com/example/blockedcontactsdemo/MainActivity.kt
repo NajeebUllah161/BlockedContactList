@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 
 
         var name: ArrayList<String> = ArrayList()
-//        var incre: Int = 0
 
         if (c != null) {
             Log.i("Blocked List: ", c.moveToFirst().toString())
@@ -46,13 +45,11 @@ class MainActivity : AppCompatActivity() {
             do {
                 name.add(c.getString(1))
 
-//                Log.i("Names", name.get(incre))
-//                incre++
             } while (c.moveToNext())
 
         }
 
-        val customAdapter = CustomAdapter(name)
+        val customAdapter = CustomAdapter(name, this)
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerview)
 
