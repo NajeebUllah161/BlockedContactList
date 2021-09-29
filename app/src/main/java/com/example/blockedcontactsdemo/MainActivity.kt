@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
                 name.add(c.getString(1))
 
             } while (c.moveToNext())
-
+            c.close()
         }
 
         val customAdapter = CustomAdapter(name, this)

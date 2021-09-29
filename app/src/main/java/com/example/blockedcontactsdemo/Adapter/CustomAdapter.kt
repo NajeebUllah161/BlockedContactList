@@ -12,7 +12,7 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.blockedcontactsdemo.R
 
-class CustomAdapter(private val dataSet: ArrayList<String>, private var context: Context) :
+class CustomAdapter(private val dataSet: ArrayList<String>, private val context: Context) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     @RequiresApi(Build.VERSION_CODES.N)
